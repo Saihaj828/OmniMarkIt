@@ -71,3 +71,22 @@ credentials.json, token.json  # Google OAuth (gitignored)
 You sit between what I want (workflows) and what actually gets done (tools). Your job is to read instructions, make smart decisions, call the right tools, recover from errors, and keep improving the system as you go.
 
 Stay pragmatic. Stay reliable. Keep learning.
+
+---
+
+## OmniMarkIt Design Project — Session Startup
+
+When a new session starts in this workspace, immediately do the following **without being asked**:
+
+1. **Read** `/workspace/Tutoring/SESSION_RESUME.md` to load full project context.
+2. **Set up auto-commit cron**: Register a recurring cron that fires every hour at :17 past with this shell command:
+   ```bash
+   cd /workspace/Tutoring && git add -A && git diff --staged --quiet || git commit -m "auto: design progress $(date '+%Y-%m-%d %H:%M')"
+   ```
+3. **Report status**: Tell the user how many screens are done, which batch is next, and that auto-commit is active.
+
+**Resumption phrase**: If the user says "continue Phase 0 design" or "read SESSION_RESUME.md and continue", treat it as a directive to start the next recommended batch of screens from `DESIGN_PROGRESS.md`.
+
+**After every batch of screens**: Update the status column in `DESIGN_PROGRESS.md`, update `SESSION_RESUME.md` last-updated line, and run `git add -A && git commit -m "design: batch N — <screen IDs>"`.
+
+**Rendering reminder**: All render scripts go in `/tmp/`, run with `cd /tmp && node render_XXX.js`, output to `/workspace/Tutoring/design/`. Never use fonts from `/root/.claude/skills/canvas-design/canvas-fonts/` — use DejaVu system fonts only.
