@@ -110,11 +110,11 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | E5 | Dispute Flow | 🚨 Critical | queued | — | — |
 | **ADMIN LAYER** |
 | A1 | Admin Dashboard | 🚨 Critical | **DONE** | `A1_admin_dashboard.png` | `render_admin.js` |
-| A2 | Tutor Verification Queue | 🚨 Critical | queued | — | — |
+| A2 | Tutor Verification Queue | 🚨 Critical | **DONE** | `A2_verification_queue.png` | `render_A2.js` |
 | A3 | Credential Viewer | 🚨 Critical | queued | — | — |
-| A4 | Flagged Sessions Queue | 🚨 Critical | queued | — | — |
+| A4 | Flagged Sessions Queue | 🚨 Critical | **DONE** | `A4_flagged_sessions.png` | `render_A4.js` |
 | A5 | Recording Playback | 🚨 Critical | queued | — | — |
-| A6 | Dispute Management | 🚨 Critical | queued | — | — |
+| A6 | Dispute Management | 🚨 Critical | **DONE** | `A6_dispute_management.png` | `render_A6.js` |
 | A7 | User Management | 🚨 Critical | queued | — | — |
 | **MOBILE** |
 | M1 | Mobile Onboarding | ✅ High | queued | — | — |
@@ -135,6 +135,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 3 | 2026-04-27 | O2, O3, O4 | Onboarding flow: subject selection, credentials upload, availability calendar |
 | 4 | 2026-04-27 | SL1, SL2, SL3 | Session lifecycle modals: consent gate, in-session report, end & review |
 | 5 | 2026-04-27 | T2, T3, T6 | Tutor portal: profile editor, availability manager, earnings & payouts |
+| 6 | 2026-04-27 | A2, A4, A6 | Admin ops: verification queue, flagged sessions, dispute management |
 
 ---
 

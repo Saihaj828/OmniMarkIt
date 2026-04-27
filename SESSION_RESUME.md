@@ -22,7 +22,7 @@
 ## Current Phase: Phase 0 — Design & Prototyping
 
 **Goal**: Produce high-fidelity PNG mockups for all 58 screens before writing any code.
-**Status**: 16 of 58 screens complete.
+**Status**: 19 of 58 screens complete.
 
 ### Completed Screens
 
@@ -44,12 +44,15 @@
 | `design/T2_profile_editor.png` | T2 Tutor Profile Editor | Photo, bio, rate, teaching approach, education, video |
 | `design/T3_availability_manager.png` | T3 Availability Manager | Stats row, settings, weekly grid with bookings, exceptions |
 | `design/T6_earnings_payouts.png` | T6 Earnings & Payouts | Stats, bar chart, payout settings, transaction table |
+| `design/A2_verification_queue.png` | A2 Verification Queue | Stats, filter tabs, 9-row queue, credential preview panel |
+| `design/A4_flagged_sessions.png` | A4 Flagged Sessions | Red alert bar, severity-striped rows, session detail panel |
+| `design/A6_dispute_management.png` | A6 Dispute Management | Stats, 8-row table, full dispute detail + resolution panel |
 
 ### Next Recommended Batch (Batch 6)
 
-**Admin ops screens** — A2 Verification Queue, A4 Flagged Sessions, A6 Dispute Management — all 🚨 Critical
-Then: S3, S4, S5, S6 (Tutor Profile student view, Booking Flow, Payment, Session Detail)
+**Student flow** — S3 Tutor Profile (student view), S4 Booking Flow, S5 Payment, S6 Session Detail — all 🚨 High/Critical
 Then: E1–E5 (Edge cases: cancel, reschedule, payment failed, subscription, dispute)
+Then: O5–O10 (Remaining onboarding steps)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -185,7 +188,7 @@ TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5 O6 O7 O8 O9 O10
 SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
 EDGE CASES (E1–E5):  E1 E2 E3 E4 E5
-ADMIN (A1–A7):       A1✅ A2 A3 A4 A5 A6 A7
+ADMIN (A1–A7):       A1✅ A2✅ A3 A4✅ A5 A6✅ A7
 MOBILE (M1–M6):      M1 M2 M3 M4 M5 M6
 ```
 
@@ -208,4 +211,13 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 5 complete (T2, T3, T6) — 16/58 screens done*
+*Last updated: 2026-04-27 — Batch 6 complete (A2, A4, A6) — 19/58 screens done*
+
+## Rendering Environment (macOS)
+
+Previous sessions ran on Linux with `/tmp/node_modules/canvas` + DejaVu fonts. This session runs on macOS with:
+- **Canvas**: `@napi-rs/canvas` installed at `/tmp/omnimarkit/node_modules/`
+- **Fonts**: `GlobalFonts.loadSystemFonts()` — use `Georgia` (Serif), `Arial` (Sans), `Courier New` (Mono)
+- **Run scripts**: `cd /tmp/omnimarkit && node render_XXX.js`
+- **Output path**: `/Volumes/Documents/AgenticWorkflow/Tutoring/design/`
+- **Key note**: `ctx.roundRect()` with object-form radii fails — use the `rr()` helper for all rounded rects; use `ctx.fillRect()` for thin colored bars
