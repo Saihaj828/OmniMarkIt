@@ -1,0 +1,18 @@
+---
+name: Meridian Authority
+movement: Visual design philosophy for OmniMarkIt tutoring platform
+---
+
+# Meridian Authority
+
+A philosophy of navigational precision meeting academic gravitas — where the compass rose meets the lecture hall. The star and the meridian line are the soul of this system: every composition radiates from a fixed center of gravity, every element oriented toward clarity of purpose. Like a sextant used to locate one's exact position beneath the stars, each design decision is grounded in the conviction that beauty and function are not opposites but the same discipline, viewed from different angles.
+
+Space and form obey cartographic discipline. The deep navy field carries the weight of infinite possibility — an ocean chart before the first harbor is marked. Elements emerge from this depth with painstaking intention, each one positioned through countless iterations of spatial refinement. Geometric precision governs: the arc, the ruling line, the resolved right angle. Forms are clean but never cold — they echo the elegant instruments of historical navigation (sextants, compasses, theodolites) made beautiful through the labor of expert hands over time. Nothing is placed casually; every margin, every gap, every alignment is the product of someone who has spent years learning what it means to care.
+
+Color operates in a narrow, deliberately chosen register. Deep navy (#05102E) anchors the gravitational center — authoritative, trustworthy, profound. Cream (#FFF2C2) is the surface that catches light: the page where knowledge is written, the dawn that reveals the horizon. Between them lives pure white — the space of possibility, the negative that defines the positive. This palette is the product of meticulous colorist calibration, each value chosen not for decoration but for meaning. No accent color is introduced without earning its place through compositional necessity.
+
+Scale and rhythm emerge from the logic of a nautical chart: primary elements at commanding scale, secondary elements at respectful distance, tertiary elements as precise annotations. The invisible grid is absolute — an underlying armature of such rigor that only a master layout architect would have constructed it, yet any viewer immediately feels its presence as an irreducible sense of rightness. Typographic scale moves in deliberate steps; each level earns its prominence through patient refinement, and the spacing between levels is as considered as the levels themselves.
+
+Typography is the instrument of final authority. Serif letterforms in the classical tradition carry the weight of institutional knowledge — the scholar's cut, the careful serif that references centuries of printed thought. Monospaced type appears as precision measurement: the analyst's notation, the engineer's label, the scientist's annotation. Text is always sparse — never a paragraph where a phrase will do, never a phrase where a single word speaks loudly enough. This economy of language is the hardest discipline to master, and when executed with deep expertise, it signals more than any verbose explanation could.
+
+Every artifact in this system must feel as though it was produced by someone who spent countless hours over every detail — the kind of painstaking craftsmanship that comes only from genuine mastery and care. The spatial relationships, the chromatic calibration, the typographic precision — each one a product of laboring attention by a craftsman who treats every composition as both a functional instrument and an object worthy of display. The final work should exist at the intersection of the functional and the sublime: a navigation instrument that is also, unmistakably, a work of art.
