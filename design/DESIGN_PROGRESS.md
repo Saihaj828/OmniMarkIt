@@ -67,10 +67,10 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | **STUDENT LAYER** |
 | S1 | Student Dashboard | ✅ High | **DONE** | `S1_student_dashboard.png` | `render_student_dashboard.js` |
 | S2 | Tutor Search (logged-in) | ✅ High | queued | — | — |
-| S3 | Tutor Profile (private view) | ✅ High | queued | — | — |
-| S4 | Booking Flow | ✅ High | queued | — | — |
-| S5 | Payment Flow | ✅ High | queued | — | — |
-| S6 | Session Detail Page | 🚨 Critical | queued | — | — |
+| S3 | Tutor Profile (private view) | ✅ High | **DONE** | `S3_tutor_profile.png` | `render_S3.js` |
+| S4 | Booking Flow | ✅ High | **DONE** | `S4_booking_flow.png` | `render_S4.js` |
+| S5 | Payment Flow | ✅ High | **DONE** | `S5_payment_flow.png` | `render_S5.js` |
+| S6 | Session Detail Page | 🚨 Critical | **DONE** | `S6_session_detail.png` | `render_S6.js` |
 | S7 | Session Room | 🚨 Critical | **DONE** | `S7_session_room.png` | `render_session_room.js` |
 | S8 | Messaging / Inbox | ✅ High | queued | — | — |
 | S9 | Post-Session Review | ✅ High | queued | — | — |
@@ -136,6 +136,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 4 | 2026-04-27 | SL1, SL2, SL3 | Session lifecycle modals: consent gate, in-session report, end & review |
 | 5 | 2026-04-27 | T2, T3, T6 | Tutor portal: profile editor, availability manager, earnings & payouts |
 | 6 | 2026-04-27 | A2, A4, A6 | Admin ops: verification queue, flagged sessions, dispute management |
+| 7 | 2026-04-27 | S3, S4, S5, S6 | Student flow: tutor profile view, booking wizard, payment checkout, session detail |
 
 ---
 

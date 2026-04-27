@@ -47,12 +47,16 @@
 | `design/A2_verification_queue.png` | A2 Verification Queue | Stats, filter tabs, 9-row queue, credential preview panel |
 | `design/A4_flagged_sessions.png` | A4 Flagged Sessions | Red alert bar, severity-striped rows, session detail panel |
 | `design/A6_dispute_management.png` | A6 Dispute Management | Stats, 8-row table, full dispute detail + resolution panel |
+| `design/S3_tutor_profile.png` | S3 Tutor Profile (Student View) | Hero card, About/Teaching/Reviews col, Quick Book + availability col |
+| `design/S4_booking_flow.png` | S4 Booking Flow | Step wizard, April calendar, time slots, session details, order summary |
+| `design/S5_payment_flow.png` | S5 Payment Flow | Saved cards, card form, credits/promo, order summary, cancellation policy |
+| `design/S6_session_detail.png` | S6 Session Detail | Countdown banner, checklist, materials, notes, tutor card, session history |
 
-### Next Recommended Batch (Batch 6)
+### Next Recommended Batch (Batch 8)
 
-**Student flow** — S3 Tutor Profile (student view), S4 Booking Flow, S5 Payment, S6 Session Detail — all 🚨 High/Critical
-Then: E1–E5 (Edge cases: cancel, reschedule, payment failed, subscription, dispute)
-Then: O5–O10 (Remaining onboarding steps)
+**Edge cases** — E1 Cancel Session, E2 Reschedule, E3 Payment Failed, E4 Subscription Management, E5 Dispute Flow — all 🚨 Critical
+Then: O5–O10 (Remaining onboarding steps: Teaching Approach through Approved/Rejected)
+Then: P3–P6 (Public + auth), A3/A5/A7 (remaining admin), M1–M6 (mobile)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -183,7 +187,7 @@ Navigational precision meets academic gravitas. Every screen feels like a well-c
 
 ```
 PUBLIC (P1–P6):      P1✅ P2✅ P3 P4 P5 P6
-STUDENT (S1–S12):    S1✅ S2 S3 S4 S5 S6 S7✅ S8 S9 S10 S11 S12
+STUDENT (S1–S12):    S1✅ S2 S3✅ S4✅ S5✅ S6✅ S7✅ S8 S9 S10 S11 S12
 TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5 O6 O7 O8 O9 O10
 SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
@@ -211,7 +215,7 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 6 complete (A2, A4, A6) — 19/58 screens done*
+*Last updated: 2026-04-27 — Batch 7 complete (S3, S4, S5, S6) — 23/58 screens done*
 
 ## Rendering Environment (macOS)
 
