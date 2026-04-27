@@ -22,7 +22,7 @@
 ## Current Phase: Phase 0 — Design & Prototyping
 
 **Goal**: Produce high-fidelity PNG mockups for all 58 screens before writing any code.
-**Status**: 13 of 58 screens complete.
+**Status**: 16 of 58 screens complete.
 
 ### Completed Screens
 
@@ -41,12 +41,15 @@
 | `design/SL1_consent_gate.png` | SL1 Consent Gate | Pre-join modal, consent checkboxes, recording notice |
 | `design/SL2_report_modal.png` | SL2 Report Modal | In-session report, issue type selector, textarea |
 | `design/SL3_end_session.png` | SL3 End Session | Two-col: session summary + rating, tip, book-again |
+| `design/T2_profile_editor.png` | T2 Tutor Profile Editor | Photo, bio, rate, teaching approach, education, video |
+| `design/T3_availability_manager.png` | T3 Availability Manager | Stats row, settings, weekly grid with bookings, exceptions |
+| `design/T6_earnings_payouts.png` | T6 Earnings & Payouts | Stats, bar chart, payout settings, transaction table |
 
-### Next Recommended Batch (Batch 5)
+### Next Recommended Batch (Batch 6)
 
-**Tutor portal screens** — T2, T3, T6 (Profile Editor, Availability Manager, Earnings & Payouts) — all 🚨 Critical
-Then: A2, A4 (Verification Queue, Flagged Sessions — admin dedicated screens)
-Then: S3, S4, S5 (Tutor Profile student view, Booking Flow, Payment)
+**Admin ops screens** — A2 Verification Queue, A4 Flagged Sessions, A6 Dispute Management — all 🚨 Critical
+Then: S3, S4, S5, S6 (Tutor Profile student view, Booking Flow, Payment, Session Detail)
+Then: E1–E5 (Edge cases: cancel, reschedule, payment failed, subscription, dispute)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -178,7 +181,7 @@ Navigational precision meets academic gravitas. Every screen feels like a well-c
 ```
 PUBLIC (P1–P6):      P1✅ P2✅ P3 P4 P5 P6
 STUDENT (S1–S12):    S1✅ S2 S3 S4 S5 S6 S7✅ S8 S9 S10 S11 S12
-TUTOR (T1–T7):       T1✅ T2 T3 T4 T5 T6 T7
+TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5 O6 O7 O8 O9 O10
 SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
 EDGE CASES (E1–E5):  E1 E2 E3 E4 E5
@@ -205,4 +208,4 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 4 complete (SL1, SL2, SL3) — 13/58 screens done*
+*Last updated: 2026-04-27 — Batch 5 complete (T2, T3, T6) — 16/58 screens done*

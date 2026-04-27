@@ -79,11 +79,11 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | S12 | Notifications Center | ⚠️ Medium | queued | — | — |
 | **TUTOR LAYER** |
 | T1 | Tutor Dashboard | 🚨 Critical | **DONE** | `T1_tutor_dashboard.png` | `render_tutor_dashboard.js` |
-| T2 | Tutor Profile Editor | 🚨 Critical | queued | — | — |
-| T3 | Availability Manager | 🚨 Critical | queued | — | — |
+| T2 | Tutor Profile Editor | 🚨 Critical | **DONE** | `T2_profile_editor.png` | `render_T2.js` |
+| T3 | Availability Manager | 🚨 Critical | **DONE** | `T3_availability_manager.png` | `render_T3.js` |
 | T4 | Tutor Inbox | ✅ High | queued | — | — |
 | T5 | Session Detail (Tutor view) | 🚨 Critical | queued | — | — |
-| T6 | Earnings & Payouts | 🚨 Critical | queued | — | — |
+| T6 | Earnings & Payouts | 🚨 Critical | **DONE** | `T6_earnings_payouts.png` | `render_T6.js` |
 | T7 | Reviews & Ratings | ⚠️ Medium | queued | — | — |
 | **ONBOARDING LAYER** |
 | O1 | Onboarding Start | 🚨 Critical | **DONE** | `O1_onboarding_start.png` | `render_onboarding.js` |
@@ -134,6 +134,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 2 | 2026-04-26 | S7, O1, A1 | Core patterns: session room, onboarding wizard, admin ops |
 | 3 | 2026-04-27 | O2, O3, O4 | Onboarding flow: subject selection, credentials upload, availability calendar |
 | 4 | 2026-04-27 | SL1, SL2, SL3 | Session lifecycle modals: consent gate, in-session report, end & review |
+| 5 | 2026-04-27 | T2, T3, T6 | Tutor portal: profile editor, availability manager, earnings & payouts |
 
 ---
 
