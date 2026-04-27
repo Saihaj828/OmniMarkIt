@@ -22,7 +22,7 @@
 ## Current Phase: Phase 0 — Design & Prototyping
 
 **Goal**: Produce high-fidelity PNG mockups for all 58 screens before writing any code.
-**Status**: 10 of 58 screens complete.
+**Status**: 13 of 58 screens complete.
 
 ### Completed Screens
 
@@ -38,12 +38,15 @@
 | `design/O2_subject_selection.png` | O2 Subject Selection | Multi-select subject chips + level cards |
 | `design/O3_credentials_upload.png` | O3 Credentials Upload | Drag-drop zones, upload states, verification timeline |
 | `design/O4_availability_setup.png` | O4 Availability Setup | Weekly calendar grid, time slots, presets |
+| `design/SL1_consent_gate.png` | SL1 Consent Gate | Pre-join modal, consent checkboxes, recording notice |
+| `design/SL2_report_modal.png` | SL2 Report Modal | In-session report, issue type selector, textarea |
+| `design/SL3_end_session.png` | SL3 End Session | Two-col: session summary + rating, tip, book-again |
 
-### Next Recommended Batch (Batch 4)
+### Next Recommended Batch (Batch 5)
 
-**Session Lifecycle modals** — SL1, SL2, SL3 (consent gate, in-session report modal, end & report flow) — all 🚨 Critical
-Then: T2, T3, T6 (Tutor Profile Editor, Availability Manager, Earnings & Payouts)
+**Tutor portal screens** — T2, T3, T6 (Profile Editor, Availability Manager, Earnings & Payouts) — all 🚨 Critical
 Then: A2, A4 (Verification Queue, Flagged Sessions — admin dedicated screens)
+Then: S3, S4, S5 (Tutor Profile student view, Booking Flow, Payment)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -177,7 +180,7 @@ PUBLIC (P1–P6):      P1✅ P2✅ P3 P4 P5 P6
 STUDENT (S1–S12):    S1✅ S2 S3 S4 S5 S6 S7✅ S8 S9 S10 S11 S12
 TUTOR (T1–T7):       T1✅ T2 T3 T4 T5 T6 T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5 O6 O7 O8 O9 O10
-SESSION LIFECYCLE:   SL1 SL2 SL3 SL4 SL5
+SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
 EDGE CASES (E1–E5):  E1 E2 E3 E4 E5
 ADMIN (A1–A7):       A1✅ A2 A3 A4 A5 A6 A7
 MOBILE (M1–M6):      M1 M2 M3 M4 M5 M6
@@ -202,4 +205,4 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 3 complete (O2, O3, O4) — 10/58 screens done*
+*Last updated: 2026-04-27 — Batch 4 complete (SL1, SL2, SL3) — 13/58 screens done*

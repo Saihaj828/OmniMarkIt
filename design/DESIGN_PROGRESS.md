@@ -97,9 +97,9 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | O9 | Verification Pending | 🚨 Critical | queued | — | — |
 | O10 | Approved / Rejected | 🚨 Critical | queued | — | — |
 | **SESSION LIFECYCLE** |
-| SL1 | Join Session Consent Gate | 🚨 Critical | queued | — | — |
-| SL2 | In-Session Report Modal | 🚨 Critical | queued | — | — |
-| SL3 | End & Report Flow | 🚨 Critical | queued | — | — |
+| SL1 | Join Session Consent Gate | 🚨 Critical | **DONE** | `SL1_consent_gate.png` | `render_SL1.js` |
+| SL2 | In-Session Report Modal | 🚨 Critical | **DONE** | `SL2_report_modal.png` | `render_SL2.js` |
+| SL3 | End & Report Flow | 🚨 Critical | **DONE** | `SL3_end_session.png` | `render_SL3.js` |
 | SL4 | Post-Session Safety Prompt | 🚨 Critical | queued | — | — |
 | SL5 | Flag Confirmation | ⚠️ Medium | queued | — | — |
 | **EDGE CASES** |
@@ -133,6 +133,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 1 | 2026-04-26 | P1, P2, S1, T1 | Foundation screens: landing, search, both dashboards |
 | 2 | 2026-04-26 | S7, O1, A1 | Core patterns: session room, onboarding wizard, admin ops |
 | 3 | 2026-04-27 | O2, O3, O4 | Onboarding flow: subject selection, credentials upload, availability calendar |
+| 4 | 2026-04-27 | SL1, SL2, SL3 | Session lifecycle modals: consent gate, in-session report, end & review |
 
 ---
 
