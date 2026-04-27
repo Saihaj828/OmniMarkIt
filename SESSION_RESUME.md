@@ -51,11 +51,15 @@
 | `design/S4_booking_flow.png` | S4 Booking Flow | Step wizard, April calendar, time slots, session details, order summary |
 | `design/S5_payment_flow.png` | S5 Payment Flow | Saved cards, card form, credits/promo, order summary, cancellation policy |
 | `design/S6_session_detail.png` | S6 Session Detail | Countdown banner, checklist, materials, notes, tutor card, session history |
+| `design/E1_cancel_session.png` | E1 Cancel Session Modal | Dark overlay modal, refund policy tiers, full-refund eligibility banner |
+| `design/E2_reschedule_flow.png` | E2 Reschedule Flow | Current booking → May calendar → time slots, FROM/TO comparison card, policy |
+| `design/E3_payment_failed.png` | E3 Payment Failed | Red alert banner, Stripe error code, fix options, card form, 14:32 countdown |
+| `design/E4_subscription_management.png` | E4 Subscription Management | 3 plan cards (Starter/Scholar/Intensive), usage stats, invoice history table |
+| `design/E5_dispute_flow.png` | E5 Dispute Flow | 5-step tracker, dispute type selector, claim textarea, timeline, OmniMarkIt Guarantee |
 
-### Next Recommended Batch (Batch 8)
+### Next Recommended Batch (Batch 9)
 
-**Edge cases** — E1 Cancel Session, E2 Reschedule, E3 Payment Failed, E4 Subscription Management, E5 Dispute Flow — all 🚨 Critical
-Then: O5–O10 (Remaining onboarding steps: Teaching Approach through Approved/Rejected)
+**Remaining onboarding** — O5 Teaching Approach, O6 Stripe Onboarding, O7 ID Verification, O8 Background Check, O9 Verification Pending, O10 Approved/Rejected — all 🚨 Critical
 Then: P3–P6 (Public + auth), A3/A5/A7 (remaining admin), M1–M6 (mobile)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
@@ -191,7 +195,7 @@ STUDENT (S1–S12):    S1✅ S2 S3✅ S4✅ S5✅ S6✅ S7✅ S8 S9 S10 S11 S12
 TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5 O6 O7 O8 O9 O10
 SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
-EDGE CASES (E1–E5):  E1 E2 E3 E4 E5
+EDGE CASES (E1–E5):  E1✅ E2✅ E3✅ E4✅ E5✅
 ADMIN (A1–A7):       A1✅ A2✅ A3 A4✅ A5 A6✅ A7
 MOBILE (M1–M6):      M1 M2 M3 M4 M5 M6
 ```
@@ -215,7 +219,7 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 7 complete (S3, S4, S5, S6) — 23/58 screens done*
+*Last updated: 2026-04-27 — Batch 8 complete (E1–E5) — 28/58 screens done*
 
 ## Rendering Environment (macOS)
 

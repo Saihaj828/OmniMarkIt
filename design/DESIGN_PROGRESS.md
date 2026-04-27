@@ -103,11 +103,11 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | SL4 | Post-Session Safety Prompt | 🚨 Critical | queued | — | — |
 | SL5 | Flag Confirmation | ⚠️ Medium | queued | — | — |
 | **EDGE CASES** |
-| E1 | Cancel Session Modal | 🚨 Critical | queued | — | — |
-| E2 | Reschedule Flow | 🚨 Critical | queued | — | — |
-| E3 | Payment Failed | 🚨 Critical | queued | — | — |
-| E4 | Subscription Management | 🚨 Critical | queued | — | — |
-| E5 | Dispute Flow | 🚨 Critical | queued | — | — |
+| E1 | Cancel Session Modal | 🚨 Critical | **DONE** | `E1_cancel_session.png` | `render_E1.js` |
+| E2 | Reschedule Flow | 🚨 Critical | **DONE** | `E2_reschedule_flow.png` | `render_E2.js` |
+| E3 | Payment Failed | 🚨 Critical | **DONE** | `E3_payment_failed.png` | `render_E3.js` |
+| E4 | Subscription Management | 🚨 Critical | **DONE** | `E4_subscription_management.png` | `render_E4.js` |
+| E5 | Dispute Flow | 🚨 Critical | **DONE** | `E5_dispute_flow.png` | `render_E5.js` |
 | **ADMIN LAYER** |
 | A1 | Admin Dashboard | 🚨 Critical | **DONE** | `A1_admin_dashboard.png` | `render_admin.js` |
 | A2 | Tutor Verification Queue | 🚨 Critical | **DONE** | `A2_verification_queue.png` | `render_A2.js` |
@@ -137,6 +137,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 5 | 2026-04-27 | T2, T3, T6 | Tutor portal: profile editor, availability manager, earnings & payouts |
 | 6 | 2026-04-27 | A2, A4, A6 | Admin ops: verification queue, flagged sessions, dispute management |
 | 7 | 2026-04-27 | S3, S4, S5, S6 | Student flow: tutor profile view, booking wizard, payment checkout, session detail |
+| 8 | 2026-04-27 | E1, E2, E3, E4, E5 | Edge cases: cancel modal, reschedule flow, payment failed, subscription, dispute |
 
 ---
 
