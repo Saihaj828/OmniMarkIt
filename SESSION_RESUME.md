@@ -22,7 +22,7 @@
 ## Current Phase: Phase 0 — Design & Prototyping
 
 **Goal**: Produce high-fidelity PNG mockups for all 58 screens before writing any code.
-**Status**: 7 of 58 screens complete.
+**Status**: 10 of 58 screens complete.
 
 ### Completed Screens
 
@@ -35,12 +35,15 @@
 | `design/S7_session_room.png` | S7 Session Room | 1440×900 video/whiteboard/chat |
 | `design/O1_onboarding_start.png` | O1 Onboarding Start | 10-step wizard, step 1 form |
 | `design/A1_admin_dashboard.png` | A1 Admin Dashboard | Top-nav only, tables, revenue |
+| `design/O2_subject_selection.png` | O2 Subject Selection | Multi-select subject chips + level cards |
+| `design/O3_credentials_upload.png` | O3 Credentials Upload | Drag-drop zones, upload states, verification timeline |
+| `design/O4_availability_setup.png` | O4 Availability Setup | Weekly calendar grid, time slots, presets |
 
-### Next Recommended Batch (Batch 3)
+### Next Recommended Batch (Batch 4)
 
-**Critical onboarding flow** — O2, O3, O4 (Subject Selection, Credentials Upload, Availability Setup)
-Then: SL1, SL2, SL3 (Session Lifecycle modals — consent gate, report modal, end flow)
-Then: T2, T3, T6 (Tutor Profile Editor, Availability Manager, Earnings)
+**Session Lifecycle modals** — SL1, SL2, SL3 (consent gate, in-session report modal, end & report flow) — all 🚨 Critical
+Then: T2, T3, T6 (Tutor Profile Editor, Availability Manager, Earnings & Payouts)
+Then: A2, A4 (Verification Queue, Flagged Sessions — admin dedicated screens)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -173,7 +176,7 @@ Navigational precision meets academic gravitas. Every screen feels like a well-c
 PUBLIC (P1–P6):      P1✅ P2✅ P3 P4 P5 P6
 STUDENT (S1–S12):    S1✅ S2 S3 S4 S5 S6 S7✅ S8 S9 S10 S11 S12
 TUTOR (T1–T7):       T1✅ T2 T3 T4 T5 T6 T7
-ONBOARDING (O1–O10): O1✅ O2 O3 O4 O5 O6 O7 O8 O9 O10
+ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5 O6 O7 O8 O9 O10
 SESSION LIFECYCLE:   SL1 SL2 SL3 SL4 SL5
 EDGE CASES (E1–E5):  E1 E2 E3 E4 E5
 ADMIN (A1–A7):       A1✅ A2 A3 A4 A5 A6 A7
@@ -199,4 +202,4 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 2 complete (S7, O1, A1)*
+*Last updated: 2026-04-27 — Batch 3 complete (O2, O3, O4) — 10/58 screens done*

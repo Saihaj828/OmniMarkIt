@@ -87,10 +87,10 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | T7 | Reviews & Ratings | ⚠️ Medium | queued | — | — |
 | **ONBOARDING LAYER** |
 | O1 | Onboarding Start | 🚨 Critical | **DONE** | `O1_onboarding_start.png` | `render_onboarding.js` |
-| O2 | Profile Setup | 🚨 Critical | queued | — | — |
-| O3 | Subject Selection | 🚨 Critical | queued | — | — |
-| O4 | Credentials Upload | 🚨 Critical | queued | — | — |
-| O5 | Availability Setup | 🚨 Critical | queued | — | — |
+| O2 | Subject Selection | 🚨 Critical | **DONE** | `O2_subject_selection.png` | `render_O2.js` |
+| O3 | Credentials Upload | 🚨 Critical | **DONE** | `O3_credentials_upload.png` | `render_O3.js` |
+| O4 | Availability Setup | 🚨 Critical | **DONE** | `O4_availability_setup.png` | `render_O4.js` |
+| O5 | Teaching Approach | 🚨 Critical | queued | — | — |
 | O6 | Stripe Onboarding | 🚨 Critical | queued | — | — |
 | O7 | ID Verification | 🚨 Critical | queued | — | — |
 | O8 | Background Check Status | 🚨 Critical | queued | — | — |
@@ -132,6 +132,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 |-------|------|---------|-------|
 | 1 | 2026-04-26 | P1, P2, S1, T1 | Foundation screens: landing, search, both dashboards |
 | 2 | 2026-04-26 | S7, O1, A1 | Core patterns: session room, onboarding wizard, admin ops |
+| 3 | 2026-04-27 | O2, O3, O4 | Onboarding flow: subject selection, credentials upload, availability calendar |
 
 ---
 
