@@ -69,12 +69,16 @@
 | `design/O8_background_check.png` | O8 Background Check | Checkr banner, what's included (4 items), pre-filled info, authorization checkboxes, timeline |
 | `design/O9_verification_pending.png` | O9 Verification Pending | 4 status cards (credential/ID/BG/Stripe), ETA box, what-happens-next timeline, preview button |
 | `design/O10_account_approved.png` | O10 Account Approved | Big NAVY congrats card, verification summary (4 green), profile completion, quick-start cards, CTA |
+| `design/S2_tutor_search_loggedin.png` | S2 Tutor Search (logged-in) | Sidebar, search bar + active filter chips, left filter panel (sort/subject/price/rating/availability), 6 result cards with match%, save hearts, pagination |
+| `design/S8_messaging_inbox.png` | S8 Messaging / Inbox | 3-col: conversation list (6 convos, unread badges), message thread (chat bubbles + session reminder card + compose), right sidebar (tutor card, upcoming session, shared files, quick actions) |
+| `design/S9_post_session_review.png` | S9 Post-Session Review | Session summary card, 2-col: left = overall + category star ratings, written review textarea, tag chips, recommend selector, tip prompt, GOLD submit; right = guidelines, review impact, past reviews |
+| `design/S10_billing_plans.png` | S10 Billing & Plans | Tab nav, current plan NAVY2 banner, 4 usage stat cards, 2-col: left = payment methods + transactions table; right = 3 plan cards (Starter/Scholar/Intensive, Scholar=current+highlighted), OmniMarkIt Guarantee |
 
-### Next Recommended Batch (Batch 12)
+### Next Recommended Batch (Batch 13)
 
-**Remaining Student Screens** — S2 Tutor Search (logged-in), S8 Messaging/Inbox, S9 Post-Session Review, S10 Billing & Plans
-Then: S11 Profile & Settings, S12 Notifications Center, T4 Tutor Inbox, T5 Session Detail (Tutor), T7 Reviews & Ratings, SL4/SL5
-Then: M1–M6 (mobile 375×812, 21 screens remain total)
+**Remaining Student + Tutor Screens** — S11 Profile & Settings, S12 Notifications Center, T4 Tutor Inbox, T5 Session Detail (Tutor), T7 Reviews & Ratings
+Then: SL4 Post-Session Safety Prompt, SL5 Flag Confirmation
+Then: M1–M6 (mobile 375×812, 13 screens remain total)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -205,7 +209,7 @@ Navigational precision meets academic gravitas. Every screen feels like a well-c
 
 ```
 PUBLIC (P1–P6):      P1✅ P2✅ P3✅ P4✅ P5✅ P6✅
-STUDENT (S1–S12):    S1✅ S2 S3✅ S4✅ S5✅ S6✅ S7✅ S8 S9 S10 S11 S12
+STUDENT (S1–S12):    S1✅ S2✅ S3✅ S4✅ S5✅ S6✅ S7✅ S8✅ S9✅ S10✅ S11 S12
 TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5✅ O6✅ O7✅ O8✅ O9✅ O10✅
 SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
@@ -233,7 +237,7 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-28 — Batch 11 complete (A3, A5, A7) — 41/58 screens done*
+*Last updated: 2026-04-28 — Batch 12 complete (S2, S8, S9, S10) — 45/58 screens done*
 
 ## Rendering Environment (macOS)
 

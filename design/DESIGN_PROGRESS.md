@@ -66,15 +66,15 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | P6 | Trust & Safety Info | ⚠️ Medium | **DONE** | `P6_trust_safety.png` | `render_P6.js` |
 | **STUDENT LAYER** |
 | S1 | Student Dashboard | ✅ High | **DONE** | `S1_student_dashboard.png` | `render_student_dashboard.js` |
-| S2 | Tutor Search (logged-in) | ✅ High | queued | — | — |
+| S2 | Tutor Search (logged-in) | ✅ High | **DONE** | `S2_tutor_search_loggedin.png` | `render_S2.js` |
 | S3 | Tutor Profile (private view) | ✅ High | **DONE** | `S3_tutor_profile.png` | `render_S3.js` |
 | S4 | Booking Flow | ✅ High | **DONE** | `S4_booking_flow.png` | `render_S4.js` |
 | S5 | Payment Flow | ✅ High | **DONE** | `S5_payment_flow.png` | `render_S5.js` |
 | S6 | Session Detail Page | 🚨 Critical | **DONE** | `S6_session_detail.png` | `render_S6.js` |
 | S7 | Session Room | 🚨 Critical | **DONE** | `S7_session_room.png` | `render_session_room.js` |
-| S8 | Messaging / Inbox | ✅ High | queued | — | — |
-| S9 | Post-Session Review | ✅ High | queued | — | — |
-| S10 | Billing & Plans | ✅ High | queued | — | — |
+| S8 | Messaging / Inbox | ✅ High | **DONE** | `S8_messaging_inbox.png` | `render_S8.js` |
+| S9 | Post-Session Review | ✅ High | **DONE** | `S9_post_session_review.png` | `render_S9.js` |
+| S10 | Billing & Plans | ✅ High | **DONE** | `S10_billing_plans.png` | `render_S10.js` |
 | S11 | Profile & Settings | ⚠️ Medium | queued | — | — |
 | S12 | Notifications Center | ⚠️ Medium | queued | — | — |
 | **TUTOR LAYER** |
@@ -141,6 +141,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 9 | 2026-04-27 | O5, O6, O7, O8, O9, O10 | Onboarding completion: teaching approach, Stripe setup, ID verify, background check, pending, approved |
 | 10 | 2026-04-27 | P3, P4, P5, P6 | Public + Auth: tutor profile public, login/register, forgot/reset password, trust & safety |
 | 11 | 2026-04-28 | A3, A5, A7 | Admin ops: credential viewer, recording playback, user management |
+| 12 | 2026-04-28 | S2, S8, S9, S10 | Student screens: logged-in search, messaging/inbox, post-session review, billing & plans |
 
 ---
 
