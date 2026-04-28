@@ -47,6 +47,9 @@
 | `design/A2_verification_queue.png` | A2 Verification Queue | Stats, filter tabs, 9-row queue, credential preview panel |
 | `design/A4_flagged_sessions.png` | A4 Flagged Sessions | Red alert bar, severity-striped rows, session detail panel |
 | `design/A6_dispute_management.png` | A6 Dispute Management | Stats, 8-row table, full dispute detail + resolution panel |
+| `design/A3_credential_viewer.png` | A3 Credential Viewer | Left: doc list (5 items, status badges, active=transcript), right: live PDF viewer with toolbar, paused session transcript table, metadata panel |
+| `design/A5_recording_playback.png` | A5 Recording Playback | Red context bar, video player (23:14/58:22, flagged moment marker on scrubber), transcript tab with flag highlight, right sidebar: session info, participants, flag detail, admin actions, legal hold notice |
+| `design/A7_user_management.png` | A7 User Management | Stats row (5 KPIs), search + role filter tabs, 12-row user table with role/status badges, right detail panel: selected user with avatar, stats, activity timeline, admin actions |
 | `design/P3_tutor_profile_public.png` | P3 Tutor Profile (Public) | Top nav, hero card with avatar/stats/tags, left About+Teaching+Credentials+Reviews, right booking widget + availability mini-cal |
 | `design/P4_auth_login_register.png` | P4 Auth Login / Register | Tab switcher (Login active), social buttons, email/password form, sign-up card with role toggle + fields + strength meter |
 | `design/P5_forgot_reset_password.png` | P5 Forgot / Reset Password | 3-step tracker, all 3 states shown: enter email, email sent (with countdown), set new password (strength bars + requirements) |
@@ -67,11 +70,11 @@
 | `design/O9_verification_pending.png` | O9 Verification Pending | 4 status cards (credential/ID/BG/Stripe), ETA box, what-happens-next timeline, preview button |
 | `design/O10_account_approved.png` | O10 Account Approved | Big NAVY congrats card, verification summary (4 green), profile completion, quick-start cards, CTA |
 
-### Next Recommended Batch (Batch 11)
+### Next Recommended Batch (Batch 12)
 
-**Admin Screens** — A3 Credential Viewer, A5 Recording Playback, A7 User Management (all 🚨 Critical)
-Then: S2/S8–S12 (remaining student), T4/T5/T7 (remaining tutor), SL4/SL5 (session lifecycle)
-Then: M1–M6 (mobile 375×812)
+**Remaining Student Screens** — S2 Tutor Search (logged-in), S8 Messaging/Inbox, S9 Post-Session Review, S10 Billing & Plans
+Then: S11 Profile & Settings, S12 Notifications Center, T4 Tutor Inbox, T5 Session Detail (Tutor), T7 Reviews & Ratings, SL4/SL5
+Then: M1–M6 (mobile 375×812, 21 screens remain total)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -207,7 +210,7 @@ TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5✅ O6✅ O7✅ O8✅ O9✅ O10✅
 SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
 EDGE CASES (E1–E5):  E1✅ E2✅ E3✅ E4✅ E5✅
-ADMIN (A1–A7):       A1✅ A2✅ A3 A4✅ A5 A6✅ A7
+ADMIN (A1–A7):       A1✅ A2✅ A3✅ A4✅ A5✅ A6✅ A7✅
 MOBILE (M1–M6):      M1 M2 M3 M4 M5 M6
 ```
 
@@ -230,7 +233,7 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 10 complete (P3–P6) — 38/58 screens done*
+*Last updated: 2026-04-28 — Batch 11 complete (A3, A5, A7) — 41/58 screens done*
 
 ## Rendering Environment (macOS)
 

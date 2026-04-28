@@ -111,11 +111,11 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | **ADMIN LAYER** |
 | A1 | Admin Dashboard | 🚨 Critical | **DONE** | `A1_admin_dashboard.png` | `render_admin.js` |
 | A2 | Tutor Verification Queue | 🚨 Critical | **DONE** | `A2_verification_queue.png` | `render_A2.js` |
-| A3 | Credential Viewer | 🚨 Critical | queued | — | — |
+| A3 | Credential Viewer | 🚨 Critical | **DONE** | `A3_credential_viewer.png` | `render_A3.js` |
 | A4 | Flagged Sessions Queue | 🚨 Critical | **DONE** | `A4_flagged_sessions.png` | `render_A4.js` |
-| A5 | Recording Playback | 🚨 Critical | queued | — | — |
+| A5 | Recording Playback | 🚨 Critical | **DONE** | `A5_recording_playback.png` | `render_A5.js` |
 | A6 | Dispute Management | 🚨 Critical | **DONE** | `A6_dispute_management.png` | `render_A6.js` |
-| A7 | User Management | 🚨 Critical | queued | — | — |
+| A7 | User Management | 🚨 Critical | **DONE** | `A7_user_management.png` | `render_A7.js` |
 | **MOBILE** |
 | M1 | Mobile Onboarding | ✅ High | queued | — | — |
 | M2 | Mobile Home | ✅ High | queued | — | — |
@@ -140,6 +140,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 8 | 2026-04-27 | E1, E2, E3, E4, E5 | Edge cases: cancel modal, reschedule flow, payment failed, subscription, dispute |
 | 9 | 2026-04-27 | O5, O6, O7, O8, O9, O10 | Onboarding completion: teaching approach, Stripe setup, ID verify, background check, pending, approved |
 | 10 | 2026-04-27 | P3, P4, P5, P6 | Public + Auth: tutor profile public, login/register, forgot/reset password, trust & safety |
+| 11 | 2026-04-28 | A3, A5, A7 | Admin ops: credential viewer, recording playback, user management |
 
 ---
 
