@@ -47,6 +47,10 @@
 | `design/A2_verification_queue.png` | A2 Verification Queue | Stats, filter tabs, 9-row queue, credential preview panel |
 | `design/A4_flagged_sessions.png` | A4 Flagged Sessions | Red alert bar, severity-striped rows, session detail panel |
 | `design/A6_dispute_management.png` | A6 Dispute Management | Stats, 8-row table, full dispute detail + resolution panel |
+| `design/P3_tutor_profile_public.png` | P3 Tutor Profile (Public) | Top nav, hero card with avatar/stats/tags, left About+Teaching+Credentials+Reviews, right booking widget + availability mini-cal |
+| `design/P4_auth_login_register.png` | P4 Auth Login / Register | Tab switcher (Login active), social buttons, email/password form, sign-up card with role toggle + fields + strength meter |
+| `design/P5_forgot_reset_password.png` | P5 Forgot / Reset Password | 3-step tracker, all 3 states shown: enter email, email sent (with countdown), set new password (strength bars + requirements) |
+| `design/P6_trust_safety.png` | P6 Trust & Safety Info | Top nav, hero, 4 pillars, tutor verification steps, OmniMarkIt Guarantee NAVY card, session safety 6-feature grid, reporting escalation, stats bar, FAQ, CTA |
 | `design/S3_tutor_profile.png` | S3 Tutor Profile (Student View) | Hero card, About/Teaching/Reviews col, Quick Book + availability col |
 | `design/S4_booking_flow.png` | S4 Booking Flow | Step wizard, April calendar, time slots, session details, order summary |
 | `design/S5_payment_flow.png` | S5 Payment Flow | Saved cards, card form, credits/promo, order summary, cancellation policy |
@@ -63,11 +67,11 @@
 | `design/O9_verification_pending.png` | O9 Verification Pending | 4 status cards (credential/ID/BG/Stripe), ETA box, what-happens-next timeline, preview button |
 | `design/O10_account_approved.png` | O10 Account Approved | Big NAVY congrats card, verification summary (4 green), profile completion, quick-start cards, CTA |
 
-### Next Recommended Batch (Batch 10)
+### Next Recommended Batch (Batch 11)
 
-**Public + Auth** — P3 Tutor Profile (Public), P4 Auth Login/Register, P5 Forgot/Reset Password, P6 Trust & Safety
-Then: A3 Credential Viewer, A5 Recording Playback, A7 User Management
-Then: S2/S8–S12 (remaining student), T4/T5/T7 (remaining tutor), M1–M6 (mobile 375×812)
+**Admin Screens** — A3 Credential Viewer, A5 Recording Playback, A7 User Management (all 🚨 Critical)
+Then: S2/S8–S12 (remaining student), T4/T5/T7 (remaining tutor), SL4/SL5 (session lifecycle)
+Then: M1–M6 (mobile 375×812)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -197,7 +201,7 @@ Navigational precision meets academic gravitas. Every screen feels like a well-c
 ## All 58 Screens — Quick Reference
 
 ```
-PUBLIC (P1–P6):      P1✅ P2✅ P3 P4 P5 P6
+PUBLIC (P1–P6):      P1✅ P2✅ P3✅ P4✅ P5✅ P6✅
 STUDENT (S1–S12):    S1✅ S2 S3✅ S4✅ S5✅ S6✅ S7✅ S8 S9 S10 S11 S12
 TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5✅ O6✅ O7✅ O8✅ O9✅ O10✅
@@ -226,7 +230,7 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 9 complete (O5–O10) — 34/58 screens done*
+*Last updated: 2026-04-27 — Batch 10 complete (P3–P6) — 38/58 screens done*
 
 ## Rendering Environment (macOS)
 

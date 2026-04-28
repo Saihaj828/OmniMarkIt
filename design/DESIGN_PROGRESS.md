@@ -60,10 +60,10 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | **PUBLIC LAYER** |
 | P1 | Landing / Hero | ✅ High | **DONE** | `01_landing_page.png` | `render_landing.js` |
 | P2 | Tutor Search & Browse | ✅ High | **DONE** | `P2_tutor_search.png` | `render_search.js` |
-| P3 | Tutor Profile (Public) | ✅ High | queued | — | — |
-| P4 | Auth Login / Register | ✅ High | queued | — | — |
-| P5 | Forgot / Reset Password | ⚠️ Medium | queued | — | — |
-| P6 | Trust & Safety Info | ⚠️ Medium | queued | — | — |
+| P3 | Tutor Profile (Public) | ✅ High | **DONE** | `P3_tutor_profile_public.png` | `render_P3.js` |
+| P4 | Auth Login / Register | ✅ High | **DONE** | `P4_auth_login_register.png` | `render_P4.js` |
+| P5 | Forgot / Reset Password | ⚠️ Medium | **DONE** | `P5_forgot_reset_password.png` | `render_P5.js` |
+| P6 | Trust & Safety Info | ⚠️ Medium | **DONE** | `P6_trust_safety.png` | `render_P6.js` |
 | **STUDENT LAYER** |
 | S1 | Student Dashboard | ✅ High | **DONE** | `S1_student_dashboard.png` | `render_student_dashboard.js` |
 | S2 | Tutor Search (logged-in) | ✅ High | queued | — | — |
@@ -139,6 +139,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 7 | 2026-04-27 | S3, S4, S5, S6 | Student flow: tutor profile view, booking wizard, payment checkout, session detail |
 | 8 | 2026-04-27 | E1, E2, E3, E4, E5 | Edge cases: cancel modal, reschedule flow, payment failed, subscription, dispute |
 | 9 | 2026-04-27 | O5, O6, O7, O8, O9, O10 | Onboarding completion: teaching approach, Stripe setup, ID verify, background check, pending, approved |
+| 10 | 2026-04-27 | P3, P4, P5, P6 | Public + Auth: tutor profile public, login/register, forgot/reset password, trust & safety |
 
 ---
 
