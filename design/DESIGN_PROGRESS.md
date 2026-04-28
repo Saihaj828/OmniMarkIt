@@ -90,12 +90,12 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | O2 | Subject Selection | 🚨 Critical | **DONE** | `O2_subject_selection.png` | `render_O2.js` |
 | O3 | Credentials Upload | 🚨 Critical | **DONE** | `O3_credentials_upload.png` | `render_O3.js` |
 | O4 | Availability Setup | 🚨 Critical | **DONE** | `O4_availability_setup.png` | `render_O4.js` |
-| O5 | Teaching Approach | 🚨 Critical | queued | — | — |
-| O6 | Stripe Onboarding | 🚨 Critical | queued | — | — |
-| O7 | ID Verification | 🚨 Critical | queued | — | — |
-| O8 | Background Check Status | 🚨 Critical | queued | — | — |
-| O9 | Verification Pending | 🚨 Critical | queued | — | — |
-| O10 | Approved / Rejected | 🚨 Critical | queued | — | — |
+| O5 | Teaching Approach | 🚨 Critical | **DONE** | `O5_teaching_approach.png` | `render_O5.js` |
+| O6 | Stripe Onboarding | 🚨 Critical | **DONE** | `O6_stripe_onboarding.png` | `render_O6.js` |
+| O7 | ID Verification | 🚨 Critical | **DONE** | `O7_id_verification.png` | `render_O7.js` |
+| O8 | Background Check Status | 🚨 Critical | **DONE** | `O8_background_check.png` | `render_O8.js` |
+| O9 | Verification Pending | 🚨 Critical | **DONE** | `O9_verification_pending.png` | `render_O9.js` |
+| O10 | Approved / Rejected | 🚨 Critical | **DONE** | `O10_account_approved.png` | `render_O10.js` |
 | **SESSION LIFECYCLE** |
 | SL1 | Join Session Consent Gate | 🚨 Critical | **DONE** | `SL1_consent_gate.png` | `render_SL1.js` |
 | SL2 | In-Session Report Modal | 🚨 Critical | **DONE** | `SL2_report_modal.png` | `render_SL2.js` |
@@ -138,6 +138,7 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 6 | 2026-04-27 | A2, A4, A6 | Admin ops: verification queue, flagged sessions, dispute management |
 | 7 | 2026-04-27 | S3, S4, S5, S6 | Student flow: tutor profile view, booking wizard, payment checkout, session detail |
 | 8 | 2026-04-27 | E1, E2, E3, E4, E5 | Edge cases: cancel modal, reschedule flow, payment failed, subscription, dispute |
+| 9 | 2026-04-27 | O5, O6, O7, O8, O9, O10 | Onboarding completion: teaching approach, Stripe setup, ID verify, background check, pending, approved |
 
 ---
 

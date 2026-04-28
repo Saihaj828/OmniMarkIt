@@ -56,11 +56,18 @@
 | `design/E3_payment_failed.png` | E3 Payment Failed | Red alert banner, Stripe error code, fix options, card form, 14:32 countdown |
 | `design/E4_subscription_management.png` | E4 Subscription Management | 3 plan cards (Starter/Scholar/Intensive), usage stats, invoice history table |
 | `design/E5_dispute_flow.png` | E5 Dispute Flow | 5-step tracker, dispute type selector, claim textarea, timeline, OmniMarkIt Guarantee |
+| `design/O5_teaching_approach.png` | O5 Teaching Approach | Teaching style cards, pace chips, session structure checkboxes, specializations, bio textarea |
+| `design/O6_stripe_onboarding.png` | O6 Stripe Onboarding | Stripe Connect banner, account type, personal info form, bank account form, tax consent |
+| `design/O7_id_verification.png` | O7 ID Verification | Why-verify card, doc type (3 cards), upload zones (front/back/selfie), privacy notice |
+| `design/O8_background_check.png` | O8 Background Check | Checkr banner, what's included (4 items), pre-filled info, authorization checkboxes, timeline |
+| `design/O9_verification_pending.png` | O9 Verification Pending | 4 status cards (credential/ID/BG/Stripe), ETA box, what-happens-next timeline, preview button |
+| `design/O10_account_approved.png` | O10 Account Approved | Big NAVY congrats card, verification summary (4 green), profile completion, quick-start cards, CTA |
 
-### Next Recommended Batch (Batch 9)
+### Next Recommended Batch (Batch 10)
 
-**Remaining onboarding** — O5 Teaching Approach, O6 Stripe Onboarding, O7 ID Verification, O8 Background Check, O9 Verification Pending, O10 Approved/Rejected — all 🚨 Critical
-Then: P3–P6 (Public + auth), A3/A5/A7 (remaining admin), M1–M6 (mobile)
+**Public + Auth** — P3 Tutor Profile (Public), P4 Auth Login/Register, P5 Forgot/Reset Password, P6 Trust & Safety
+Then: A3 Credential Viewer, A5 Recording Playback, A7 User Management
+Then: S2/S8–S12 (remaining student), T4/T5/T7 (remaining tutor), M1–M6 (mobile 375×812)
 
 Full priority order in `design/DESIGN_PROGRESS.md`.
 
@@ -193,7 +200,7 @@ Navigational precision meets academic gravitas. Every screen feels like a well-c
 PUBLIC (P1–P6):      P1✅ P2✅ P3 P4 P5 P6
 STUDENT (S1–S12):    S1✅ S2 S3✅ S4✅ S5✅ S6✅ S7✅ S8 S9 S10 S11 S12
 TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
-ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5 O6 O7 O8 O9 O10
+ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5✅ O6✅ O7✅ O8✅ O9✅ O10✅
 SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
 EDGE CASES (E1–E5):  E1✅ E2✅ E3✅ E4✅ E5✅
 ADMIN (A1–A7):       A1✅ A2✅ A3 A4✅ A5 A6✅ A7
@@ -219,7 +226,7 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-27 — Batch 8 complete (E1–E5) — 28/58 screens done*
+*Last updated: 2026-04-27 — Batch 9 complete (O5–O10) — 34/58 screens done*
 
 ## Rendering Environment (macOS)
 
