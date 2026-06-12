@@ -88,7 +88,7 @@ async def lifespan(_app: FastAPI):
     yield
 
 
-app = FastAPI(title=settings.APP_NAME, version="1.0.0", lifespan=lifespan)
+app = FastAPI(title=settings.APP_NAME, version="1.0.0")
 
 # Serve uploaded PDFs (credentials, KYC, materials) in dev. Swap for S3 in prod.
 import os  # noqa: E402
