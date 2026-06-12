@@ -22,7 +22,7 @@
 ## Current Phase: Phase 0 — Design & Prototyping
 
 **Goal**: Produce high-fidelity PNG mockups for all 58 screens before writing any code.
-**Status**: 19 of 58 screens complete.
+**Status**: 58 of 58 screens complete — **Phase 0 DONE!** Pending: move files from `/tmp/stage/` to `/workspace/Tutoring/design/` (need `chmod 777` fix — see bottom of file).
 
 ### Completed Screens
 
@@ -74,13 +74,62 @@
 | `design/S9_post_session_review.png` | S9 Post-Session Review | Session summary card, 2-col: left = overall + category star ratings, written review textarea, tag chips, recommend selector, tip prompt, GOLD submit; right = guidelines, review impact, past reviews |
 | `design/S10_billing_plans.png` | S10 Billing & Plans | Tab nav, current plan NAVY2 banner, 4 usage stat cards, 2-col: left = payment methods + transactions table; right = 3 plan cards (Starter/Scholar/Intensive, Scholar=current+highlighted), OmniMarkIt Guarantee |
 
-### Next Recommended Batch (Batch 13)
+### Phase 0 Complete!
 
-**Remaining Student + Tutor Screens** — S11 Profile & Settings, S12 Notifications Center, T4 Tutor Inbox, T5 Session Detail (Tutor), T7 Reviews & Ratings
-Then: SL4 Post-Session Safety Prompt, SL5 Flag Confirmation
-Then: M1–M6 (mobile 375×812, 13 screens remain total)
+All 58 screens rendered as of 2026-04-28. 13 final PNGs staged at `/tmp/stage/` — see fix command below.
 
-Full priority order in `design/DESIGN_PROGRESS.md`.
+**Next Phase: Phase 1 — Foundation** (Backend: FastAPI, PostgreSQL, auth, tutor vetting pipeline).
+
+Full progress table: `design/DESIGN_PROGRESS.md`.
+
+---
+
+## Data Model Decisions (Phase 1+ Coding Reference)
+
+### Normalization: 3NF + Strategic Denormalization
+
+Baseline is **3NF** for all entity and junction tables. Deviations are deliberate and performance-justified — never ad-hoc.
+
+### Deliberate Denormalizations — Always Honor These
+
+| Field(s) | Table | Rule When Coding |
+|---|---|---|
+| `avg_rating`, `total_sessions`, `total_reviews` | `TUTOR_PROFILES` | Cached counters — update via DB trigger on INSERT to REVIEWS/SESSIONS, never compute inline |
+| `student_unread_count`, `tutor_unread_count` | `CONVERSATIONS` | Increment on INSERT to MESSAGES, reset on read — never COUNT(*) |
+| `timezone` | `TUTOR_AVAILABILITY` | Denormalized from TUTOR_PROFILES — sync on tutor timezone update |
+| `student_id`, `tutor_id` | `PAYMENTS` | Duplicated from SESSIONS — avoids join on payment history queries |
+| `TEXT[]` arrays | multiple | PostgreSQL arrays — always queried as a unit, no FK table needed |
+| `JSONB metadata` | `NOTIFICATIONS`, `ADMIN_ACTIONS` | Polymorphic payload, schema varies by notification/action type |
+
+### Hard Rules for Coding
+
+- **Never** recompute `avg_rating` in application code — always read the cached column
+- **Never** allow SESSION deletion if `SESSION_FLAGS.legal_hold = TRUE` — enforce in app layer + FK ON DELETE RESTRICT
+- **Never** store OAuth tokens in plain text — AES-256 encrypt in `CALENDAR_CONNECTIONS`
+- **No BCNF/4NF/5NF** — over-engineered for this schema
+- **No analytics tables in OLTP schema** — use PostgreSQL materialized views for admin dashboard (Phase 6)
+- Always store monetary values in **cents (INTEGER)**, never floats
+- Always store timestamps in **UTC (TIMESTAMPTZ)**
+- All PKs are **UUID** (`gen_random_uuid()`)
+
+### All 28 Tables (Quick Reference)
+
+```
+AUTH & IDENTITY:    USERS · STUDENT_PROFILES · TUTOR_PROFILES
+SUBJECTS:           SUBJECTS · TUTOR_SUBJECTS
+VETTING:            TUTOR_VETTING · TUTOR_CREDENTIALS · TUTOR_ID_VERIFICATION · TUTOR_TEACHING_APPROACH
+SCHEDULING:         TUTOR_AVAILABILITY · AVAILABILITY_EXCEPTIONS · CALENDAR_CONNECTIONS
+SESSIONS:           SESSIONS · SESSION_MATERIALS · SESSION_FLAGS
+PAYMENTS:           BILLING_PLANS · SUBSCRIPTIONS · PAYMENTS · PAYOUTS · PAYMENT_METHODS · PROMO_CODES · CANCELLATION_POLICIES
+REVIEWS:            REVIEWS
+MESSAGING:          CONVERSATIONS · MESSAGES
+NOTIFICATIONS:      NOTIFICATIONS
+DISPUTES & SAFETY:  DISPUTES
+ADMIN:              ADMIN_ACTIONS
+```
+
+### Data Model Excel
+`/workspace/Tutoring/design/omnimarkit_data_model.xlsx` (4 sheets: Entity Overview, Full Field Schema, Relationships, Enums)
 
 ---
 
@@ -209,14 +258,15 @@ Navigational precision meets academic gravitas. Every screen feels like a well-c
 
 ```
 PUBLIC (P1–P6):      P1✅ P2✅ P3✅ P4✅ P5✅ P6✅
-STUDENT (S1–S12):    S1✅ S2✅ S3✅ S4✅ S5✅ S6✅ S7✅ S8✅ S9✅ S10✅ S11 S12
-TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4 T5 T6✅ T7
+STUDENT (S1–S12):    S1✅ S2✅ S3✅ S4✅ S5✅ S6✅ S7✅ S8✅ S9✅ S10✅ S11✅ S12✅
+TUTOR (T1–T7):       T1✅ T2✅ T3✅ T4✅ T5✅ T6✅ T7✅
 ONBOARDING (O1–O10): O1✅ O2✅ O3✅ O4✅ O5✅ O6✅ O7✅ O8✅ O9✅ O10✅
-SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4 SL5
+SESSION LIFECYCLE:   SL1✅ SL2✅ SL3✅ SL4✅ SL5✅
 EDGE CASES (E1–E5):  E1✅ E2✅ E3✅ E4✅ E5✅
 ADMIN (A1–A7):       A1✅ A2✅ A3✅ A4✅ A5✅ A6✅ A7✅
-MOBILE (M1–M6):      M1 M2 M3 M4 M5 M6
+MOBILE (M1–M6):      M1✅ M2✅ M3✅ M4✅ M5✅ M6✅
 ```
+**58/58 screens complete — Phase 0 DONE!** ✅
 
 Full detail with file paths: `design/DESIGN_PROGRESS.md`
 
@@ -237,7 +287,21 @@ git push -u origin main
 
 ---
 
-*Last updated: 2026-04-28 — Batch 12 complete (S2, S8, S9, S10) — 45/58 screens done*
+*Last updated: 2026-04-28 — Batches 13+14 complete (S11, S12, T4, T5, T7, SL4, SL5, M1–M6) — 58/58 screens done — Phase 0 COMPLETE*
+
+## ⚠️ ACTION REQUIRED: Move staged PNGs
+
+The design directory lost write permissions this session. All 13 final PNGs are rendered and ready at `/tmp/stage/`. Run this one command to move them in:
+
+```bash
+chmod 777 /workspace/Tutoring/design && cp /tmp/stage/*.png /workspace/Tutoring/design/ && chmod 777 /workspace/Tutoring/design/*.png
+```
+
+Then run the git commit:
+
+```bash
+cd /workspace/Tutoring && git add -A && git commit -m "design: Batches 13+14 — Phase 0 complete (58/58 screens)"
+```
 
 ## Rendering Environment (macOS)
 

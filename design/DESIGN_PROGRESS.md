@@ -75,16 +75,16 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | S8 | Messaging / Inbox | ✅ High | **DONE** | `S8_messaging_inbox.png` | `render_S8.js` |
 | S9 | Post-Session Review | ✅ High | **DONE** | `S9_post_session_review.png` | `render_S9.js` |
 | S10 | Billing & Plans | ✅ High | **DONE** | `S10_billing_plans.png` | `render_S10.js` |
-| S11 | Profile & Settings | ⚠️ Medium | queued | — | — |
-| S12 | Notifications Center | ⚠️ Medium | queued | — | — |
+| S11 | Profile & Settings | ⚠️ Medium | **DONE** | `S11_profile_settings.png` | `render_S11.js` |
+| S12 | Notifications Center | ⚠️ Medium | **DONE** | `S12_notifications_center.png` | `render_S12.js` |
 | **TUTOR LAYER** |
 | T1 | Tutor Dashboard | 🚨 Critical | **DONE** | `T1_tutor_dashboard.png` | `render_tutor_dashboard.js` |
 | T2 | Tutor Profile Editor | 🚨 Critical | **DONE** | `T2_profile_editor.png` | `render_T2.js` |
 | T3 | Availability Manager | 🚨 Critical | **DONE** | `T3_availability_manager.png` | `render_T3.js` |
-| T4 | Tutor Inbox | ✅ High | queued | — | — |
-| T5 | Session Detail (Tutor view) | 🚨 Critical | queued | — | — |
+| T4 | Tutor Inbox | ✅ High | **DONE** | `T4_tutor_inbox.png` | `render_T4.js` |
+| T5 | Session Detail (Tutor view) | 🚨 Critical | **DONE** | `T5_session_detail_tutor.png` | `render_T5.js` |
 | T6 | Earnings & Payouts | 🚨 Critical | **DONE** | `T6_earnings_payouts.png` | `render_T6.js` |
-| T7 | Reviews & Ratings | ⚠️ Medium | queued | — | — |
+| T7 | Reviews & Ratings | ⚠️ Medium | **DONE** | `T7_reviews_ratings.png` | `render_T7.js` |
 | **ONBOARDING LAYER** |
 | O1 | Onboarding Start | 🚨 Critical | **DONE** | `O1_onboarding_start.png` | `render_onboarding.js` |
 | O2 | Subject Selection | 🚨 Critical | **DONE** | `O2_subject_selection.png` | `render_O2.js` |
@@ -100,8 +100,8 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | SL1 | Join Session Consent Gate | 🚨 Critical | **DONE** | `SL1_consent_gate.png` | `render_SL1.js` |
 | SL2 | In-Session Report Modal | 🚨 Critical | **DONE** | `SL2_report_modal.png` | `render_SL2.js` |
 | SL3 | End & Report Flow | 🚨 Critical | **DONE** | `SL3_end_session.png` | `render_SL3.js` |
-| SL4 | Post-Session Safety Prompt | 🚨 Critical | queued | — | — |
-| SL5 | Flag Confirmation | ⚠️ Medium | queued | — | — |
+| SL4 | Post-Session Safety Prompt | 🚨 Critical | **DONE** | `SL4_post_session_safety.png` | `render_SL4.js` |
+| SL5 | Flag Confirmation | ⚠️ Medium | **DONE** | `SL5_flag_confirmation.png` | `render_SL5.js` |
 | **EDGE CASES** |
 | E1 | Cancel Session Modal | 🚨 Critical | **DONE** | `E1_cancel_session.png` | `render_E1.js` |
 | E2 | Reschedule Flow | 🚨 Critical | **DONE** | `E2_reschedule_flow.png` | `render_E2.js` |
@@ -117,12 +117,12 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | A6 | Dispute Management | 🚨 Critical | **DONE** | `A6_dispute_management.png` | `render_A6.js` |
 | A7 | User Management | 🚨 Critical | **DONE** | `A7_user_management.png` | `render_A7.js` |
 | **MOBILE** |
-| M1 | Mobile Onboarding | ✅ High | queued | — | — |
-| M2 | Mobile Home | ✅ High | queued | — | — |
-| M3 | Mobile Session Room | ✅ High | queued | — | — |
-| M4 | Mobile Messages | ✅ High | queued | — | — |
-| M5 | Mobile Tutor Browse | ✅ High | queued | — | — |
-| M6 | Mobile Profile & Settings | ✅ High | queued | — | — |
+| M1 | Mobile Onboarding | ✅ High | **DONE** | `M1_mobile_onboarding.png` | `render_mobile.js` |
+| M2 | Mobile Home | ✅ High | **DONE** | `M2_mobile_home.png` | `render_mobile.js` |
+| M3 | Mobile Session Room | ✅ High | **DONE** | `M3_mobile_session.png` | `render_mobile.js` |
+| M4 | Mobile Messages | ✅ High | **DONE** | `M4_mobile_messages.png` | `render_mobile.js` |
+| M5 | Mobile Tutor Browse | ✅ High | **DONE** | `M5_mobile_browse.png` | `render_mobile.js` |
+| M6 | Mobile Profile & Settings | ✅ High | **DONE** | `M6_mobile_profile.png` | `render_mobile.js` |
 
 ---
 
@@ -142,6 +142,8 @@ function star(cx,cy,sz,color,op=1){ctx.save();ctx.globalAlpha=op;ctx.fillStyle=c
 | 10 | 2026-04-27 | P3, P4, P5, P6 | Public + Auth: tutor profile public, login/register, forgot/reset password, trust & safety |
 | 11 | 2026-04-28 | A3, A5, A7 | Admin ops: credential viewer, recording playback, user management |
 | 12 | 2026-04-28 | S2, S8, S9, S10 | Student screens: logged-in search, messaging/inbox, post-session review, billing & plans |
+| 13 | 2026-04-28 | S11, S12, T4, T5, T7 | Remaining student + tutor screens: profile/settings, notifications, tutor inbox, tutor session detail, reviews |
+| 14 | 2026-04-28 | SL4, SL5, M1–M6 | Safety prompts + all 6 mobile screens (375×812) — **Phase 0 COMPLETE** |
 
 ---
 

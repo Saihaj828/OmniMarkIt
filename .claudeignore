@@ -1,0 +1,40 @@
+# Dependencies — never useful to search
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/dist/
+**/build/
+**/.next/
+**/.expo/
+**/.mypy_cache/
+**/.pytest_cache/
+**/.ruff_cache/
+
+# Logs & temp — regenerated, not source
+logs/
+.tmp/
+**/*.log
+
+# Large binary assets — 58 screen PNGs + brand files
+brand_assets/
+design/
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.pdf
+**/*.ico
+**/*.woff
+**/*.woff2
+**/*.ttf
+
+# Secrets & IDE noise
+**/.env
+**/.DS_Store
+.git/
+
+# Alembic generated migrations (verbose boilerplate)
+# Comment out if Claude needs to read migration history
+**/alembic/versions/
